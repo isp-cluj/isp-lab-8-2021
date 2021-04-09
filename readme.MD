@@ -1,12 +1,45 @@
-# Lab 8 - Working with IO streams
+# Lab 8 - Car Parking Access Controll System
 
 
 ## Exercise 1 
 
-Write a program that encrypt and decrypt text files using a very simple algorithm (each character ascii code is shifted left with 1). Encrypted file extension will be '.enc'. The application will receive the operation (encript\decript) and the file on which the operation must be applied as arguments from command line. Decrypted files will be stored having the same name as encripted file but with '.dec' extension.
+Implement a car access parking system. 
+
+### Functional requirements
+
+![Exercise 1 image](docs/UseCaseDiagramParkingLot.jpg)
+
+**Enter Car Park**
+- car is identified by plate number
+- if there are free parking spaces car is allowed to enter if not the car access is denied
+- access is denied if a car with the same plate umber is already parked
+
+**Exit Car Park**
+- cost of parking is calculated in increments of 1 SECOND to make it more easy to tests the system 
+- after leaving the parking space an access log for that car and period is stored for reporting purpose
+
+**View Current Parked Cars**
+- display all cars currently parked. Display : plate number, entry time, current cost
+- display available free spaces 
+
+**View All Past Entries for a Car**
+- display all past entries for a car. Display: plate number, entry time, total stay (in seconds), total cost;
+- display total cost for all stays
+
+**View All Unique Past Entries**
+- display all unique cars eneterd in parking lot in the past. Display: plat number and number of entries for each car 
+
+### Non-functional requirements (technical constraints)
+
+1. Car access details will be stored in a persistant storage on disk as files and the state is not lost when the application is restarted. 
+2. Car access details cab be stored using one of the 2 Java mechanisms: JSON obejcts, Serialization. 
+
+
+![Exercise 2 image](docs/SequenceDiagramParkingLot.jpg)
 
 ## Exercise 2 
 
-Considering exercise 1 from Lab 7, create a new version of the program which store each event in a separate binary file by serializing the _AccessLog_ object (as naming convention will be used : _accesslog-{timestamp}.dat_). 
- Create a class which reads all .dat serialized files, load them in an ArrayList (using deserialization) and display restul of _toString()_ method for each of them. 
+![Exercise 2 image](docs/classdiagram.png)
+
+
 
