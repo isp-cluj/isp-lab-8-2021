@@ -7,7 +7,7 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>Car Parking Access Application</name>
+    <name>IspLab8_CarPark</name>
 
     <description>Parking application.</description>
 
@@ -26,7 +26,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- class that has the main method -->
-        <mainClass>isp.lab7.Example</mainClass>
+        <mainClass>isp.lab8.carparkaccess.CarParkingAccessApp</mainClass>
         <!-- name appended to standard jar name to indicate shaded/executable version -->
         <shadedClassifierName>executable</shadedClassifierName>
         <junit-version>4.12</junit-version>
@@ -110,8 +110,8 @@
                 </executions>
             </plugin>
 
-            <plugin>
-                <!-- executes the program -->
+<!--            <plugin>
+                 executes the program 
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>1.3.1</version>
@@ -119,19 +119,19 @@
                     <execution>
                         <id>default-cli</id>
                         <goals>
-                            <!-- java runs the code from the main class -->
+                             java runs the code from the main class 
                             <goal>java</goal> 
                         </goals>
                     </execution>
                 </executions>
                 <configuration>
-                    <!-- used by java goal -->
+                     used by java goal 
                     <mainClass>${mainClass}</mainClass>
-                    <!-- used by exec goal -->
+                     used by exec goal 
                     <executable>${java.home}/bin/java</executable>
                     <commandlineArgs>-jar ${project.build.directory}/${project.build.finalName}-${shadedClassifierName}.jar arg1 arg2</commandlineArgs>
                 </configuration>
-            </plugin>
+            </plugin>-->
 
             <plugin>
                 <!-- Executes JUnit tests and writes the results as an xml and txt file -->
