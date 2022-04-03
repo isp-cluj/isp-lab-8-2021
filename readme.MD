@@ -3,7 +3,7 @@
 
 ## Exercise 1 
 
-Implement a car access parking system. 
+Implement a car access parking system based on the requirements bellow. 
 
 ### Functional requirements
 
@@ -40,7 +40,7 @@ Implement a car access parking system.
 ### Non-functional requirements (technical constraints)
 
 1. Car access details will be stored in a persistant storage on disk as files and the state is not lost when the application is restarted. 
-2. Car access details cab be stored using one of the 2 Java mechanisms: JSON obejcts, Serialization. 
+2. Car access details can be stored using one of the 2 Java mechanisms: JSON obejects, Serialization. 
 3. Minimal unit-tests should be provided to demonstrate the correct behaviour of the system.
 
 
