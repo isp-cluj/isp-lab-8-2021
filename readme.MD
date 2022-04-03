@@ -5,6 +5,12 @@
 
 Implement a car access parking system based on the requirements bellow. 
 
+Note 1 - Source folder containse some files which can be used as starting point or refference for implementing the application. 
+
+Note 2 - There is no need to implement access control levels (user and admin) as represented in the use case diagram bellow. 
+
+Note 3 - For storing cars on disk check utility classes given as example in 'files' package.
+
 ### Functional requirements
 
 ![Exercise 1 image](docs/UseCaseDiagramParkingLot.jpg)
