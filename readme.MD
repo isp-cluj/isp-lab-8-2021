@@ -1,4 +1,4 @@
-# Lab 8 - Car Parking Access Controll System
+# Lab 8 - Car Parking Access Control System
 
 
 ## Exercise 1 
@@ -46,7 +46,7 @@ Note 3 - For storing cars on disk check utility classes given as example in 'fil
 ### Non-functional requirements (technical constraints)
 
 1. Car access details will be stored in a persistant storage on disk as files and the state is not lost when the application is restarted. 
-2. Car access details can be stored using one of the 2 Java mechanisms: JSON obejects, Serialization. 
+2. Car access details can be stored using one of the 2 Java mechanisms: JSON objects, Serialization. 
 3. Minimal unit-tests should be provided to demonstrate the correct behaviour of the system.
 
 
